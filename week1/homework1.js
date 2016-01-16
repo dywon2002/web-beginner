@@ -6,7 +6,7 @@
 	     process.stdout.write(" ");
 	    for(var k=1; k<=i*2-1;k++)
 	     process.stdout.write("*");
-	    console.log(" ");
+	    console.log("");
 	   }
 	  
 	   for(var i=1; i<=number-1; i++)
@@ -15,7 +15,7 @@
 	     process.stdout.write(" ");
 	    for(var k=2*(number-2)+1; k>=i*2-1;k--)
 	     process.stdout.write("*");
-	    console.log(" ");
+	    console.log("");
 	}
 };
 
