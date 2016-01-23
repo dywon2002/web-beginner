@@ -11,7 +11,7 @@ function getRandomNum(a,b){
 		result[i-1]=i; // 숫자 1부터 범위 만큼 배열에 숫자를 1씩 증가시키며 값을 대입
 	}
 	for(var i=0;i<200;i++){ 
-		var seq = Math.floor(Math.random()*a); // 랜덤 함수로 범위 내에서 숫자를 하나 임의로 뽑는다
+		var seq = Math.floor(Math.random()*a); // 랜덤 함수로 범위 내에서 숫자를 하나 임의로 뽑는다(0부터 a-1까지)
 		var temp = result[0]; // swap 과정(배열 0번째 값과 랜덤 함수로 뽑은 숫자의 배열에 담긴 숫자를 200번 변경)
 		result[0] = result[seq]; // result 배열안의 값을 i++순이 아닌 마구잡이로 셔플 한다
 		result[seq] = temp;
@@ -22,5 +22,4 @@ function getRandomNum(a,b){
 
 }
 };
-getRandomNum(4,3);
-getRandomNum(5,4);
+getRandomNum(6,2);
